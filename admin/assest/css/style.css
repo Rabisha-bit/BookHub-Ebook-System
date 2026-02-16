@@ -1,0 +1,22 @@
+.upload-box {
+  border: 2px dashed #6c757d;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.upload-box:hover {
+  background-color: #f8f9fa;
+}
+.upload-box i {
+  font-size: 2rem;
+  color: #2c5980;
+}
+.addbook-container {
+  background-color: black !important;
+}
+table td,
+table th {
+  white-space: nowrap;
+}

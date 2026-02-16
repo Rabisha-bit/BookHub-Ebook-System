@@ -1,0 +1,115 @@
+:root {
+  --body-font: "Inter", sans-serif;
+  --heading-font: "Boldonse", system-ui;
+  --primary-color: #531f96ff;
+  --text-dark: #252525ff;
+}
+/* Navbar Base */
+
+
+/* Brand */
+.navbar-brand {
+  font-family: var(--heading-font);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #252525ff !important;
+  letter-spacing: 1px;
+}
+.navbar-brand span {
+  color: var(--primary-color);
+}
+/* Nav Links */
+.navbar-nav .nav-link {
+  font-family: var(--body-font);
+  color: #696868ff !important;
+  /* font-weight: 300; */
+  margin: 0 8px;
+  transition: 0.2s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  opacity: 0.8;
+  transform: translateY(-1px);
+}
+
+/* User Profile + Username */
+#userMenu img {
+  border: 1px solid #531f96ff;
+  padding: 1px;
+}
+
+#userMenu span {
+  color: #696868ff;
+  font-weight: 500;
+}
+
+/* Dropdown */
+.dropdown-menu {
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.dropdown-menu .dropdown-item {
+  color: var(--text-dark);
+  transition: 0.2s ease;
+  font-weight: 500;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background: rgba(106, 76, 147, 0.1);
+  color: var(--primary-color);
+  transform: translateX(3px);
+}
+
+/* Profile Summary inside Dropdown */
+.dropdown-menu h6 {
+  color: var(--text-dark);
+  font-weight: 600;
+}
+
+/* Active nav link color */
+.navbar-nav .nav-link.active {
+  color: #531f96ff !important;
+  font-weight: 600;
+}
+
+/* Hover state tuned to match brand */
+.navbar-nav .nav-link:hover {
+  color: #531f96ff !important;
+}
+
+/* Shopping cart icon active state */
+.navbar-nav .nav-link i {
+  color: #531f96ff !important;
+}
+/* Cart count badge */
+#cart-count {
+  position: absolute;
+  top: 0px;
+  right: -6px;
+  background-color: var(--primary-color);
+  color: white;
+  font-size: 0.65rem;
+  font-weight: bold;
+  width: 18px;
+  height: 18px;
+  text-align: center;
+  line-height: 18px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+/* Cart total amount - horizontal layout */
+#cart-total {
+  position: absolute;
+  top: 20px;
+  font-size: 0.75rem;
+  color: var(--text-color);
+  font-weight: 600;
+  margin-left: 4px;
+  white-space: nowrap;
+}
+
+
